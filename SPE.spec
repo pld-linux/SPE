@@ -7,7 +7,7 @@
 Summary:	SPE - Stani's Python Editor
 Summary(pl):	SPE - pythonowy edytor Staniego
 Name:		SPE
-Version:	0.7.0.a
+Version:	0.7.2.a
 Release:	0.1
 License:	LGPL 2.1+ (except sm library <free to use> and sm_idle <PSF>)
 Group:		Applications/Text
@@ -43,7 +43,7 @@ mo¿liwo¶ci± automatycznego uruchamiania z poziomu blendera. Spe jest
 rozszerzalne przy pomocy boa.
 
 %prep
-%setup -q -n %{name}-%{version}-wx%{_wx}.-bl%{_bl}
+%setup -q -n %{name}-0.7.0.a-wx%{_wx}.-bl%{_bl}
 
 %build
 python setup.py build
