@@ -4,14 +4,14 @@
 
 Summary:	SPE - Stani's Python Editor
 Name:		SPE
-Version:	0.2.0.b
+Version:	0.4.0.b
 %define		_wx 2.4.1.2
 %define		_bl 2.28
 Release:	0.1
 License:	LGPL 2.1+ (except sm library <free to use> and sm_idle <PSF>)
 Group:		Applications/Text
 Source0:	http://spe.pycs.net/releases/%{name}-%{version}-wx%{_wx}.-bl%{_bl}.zip
-# Source0-md5:	d283d5eabb63d0efbea3894ab9334186
+# Source0-md5:	2184fe9f33ab75dbfc087c81b99ad3fd
 URL:		http://spe.pycs.net/
 BuildRequires:	rpm-pythonprov
 %pyrequires_eq	python-modules
