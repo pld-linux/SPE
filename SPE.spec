@@ -11,7 +11,7 @@ Release:	0.1
 License:	LGPL 2.1+ (except sm library <free to use> and sm_idle <PSF>)
 Group:		Applications/Text
 Source0:	http://spe.pycs.net/releases/%{name}-%{version}-wx%{_wx}.-bl%{_bl}.zip
-# Source0-md5:	252ace7ecf6e9c210f29a4c38ed742e8
+# Source0-md5:	ca7deec95e38a19b75144d4ce481d6a0
 URL:		http://spe.pycs.net/
 BuildRequires:	rpm-pythonprov
 %pyrequires_eq	python-modules
