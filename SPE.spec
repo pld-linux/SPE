@@ -16,6 +16,7 @@ Source0:	http://projects.blender.org/frs/download.php/244/%{name}-%{version}-lin
 URL:		http://spe.pycs.net/
 BuildRequires:	rpm-pythonprov
 BuildRequires:	findutils
+BuildRequires:	python-devel
 %pyrequires_eq	python-modules
 Requires:	python-wxPython >= %{_wx}
 BuildArch:	noarch
