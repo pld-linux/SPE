@@ -11,8 +11,8 @@ Version:	0.7.2.a
 Release:	0.1
 License:	LGPL 2.1+ (except sm library <free to use> and sm_idle <PSF>)
 Group:		Applications/Text
-Source0:	http://projects.blender.org/frs/download.php/244/%{name}-%{version}-linux-mac.tgz
-# Source0-md5:	f3c19dcbab4d1e77b4ef34f7916d8235
+Source0:	http://projects.blender.org/frs/download.php/250/%{name}-%{version}-wx%{_wx}.-bl%{_bl}.zip
+# Source0-md5:	36d2c1d40a8730d59425f50ad2e7e870
 URL:		http://spe.pycs.net/
 BuildRequires:	rpm-pythonprov
 BuildRequires:	findutils
@@ -43,7 +43,7 @@ mo¿liwo¶ci± automatycznego uruchamiania z poziomu blendera. Spe jest
 rozszerzalne przy pomocy boa.
 
 %prep
-%setup -q -n %{name}-0.7.0.a-wx%{_wx}.-bl%{_bl}
+%setup -q -n %{name}-%{version}-wx%{_wx}.-bl%{_bl}
 
 %build
 python setup.py build
