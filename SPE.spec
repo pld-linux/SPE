@@ -1,6 +1,5 @@
 # TODO:
 # - fix %%files (doc to %%doc, no .py, remove unused files)
-%include	/usr/lib/rpm/macros.python
 
 Summary:	SPE - Stani's Python Editor
 Summary(pl):	SPE - pythonowy edytor Staniego
