@@ -30,7 +30,7 @@ to run interactively inside blender. Spe is extensible with boa.
 %description -l pl
 Spe (Stani's Python Editor) to pythonowe IDE z automatycznym
 wykonywaniem wciêæ, automatycznym dope³nianiem, podpowiedziami
-wywo³añ, kolorowaniem sk³adni, pod¶wietlaniem sk³adni, ekspolatorem
+wywo³añ, kolorowaniem sk³adni, pod¶wietlaniem sk³adni, eksploratorem
 klas, indeksem ¼róde³, automatyczn± list± TODO, przyklejanymi
 notatkami, zintegrowan± pow³ok± pycrust, przegl±dark± plików
 pythonowych, przegl±dark± ostatnio u¿ywanych plików, obs³ug± w stylu
