@@ -1,19 +1,21 @@
 # TODO:
 # - fix %%files (doc to %%doc, no .py, remove unused files)
 
+%define	_wx	2.5.2.8
+%define	_bl	2.35
+
 Summary:	SPE - Stani's Python Editor
 Summary(pl):	SPE - pythonowy edytor Staniego
 Name:		SPE
-Version:	0.4.0.b
-%define		_wx 2.4.1.2
-%define		_bl 2.28
+Version:	0.7.0.a
 Release:	0.1
 License:	LGPL 2.1+ (except sm library <free to use> and sm_idle <PSF>)
 Group:		Applications/Text
-Source0:	http://spe.pycs.net/releases/%{name}-%{version}-wx%{_wx}.-bl%{_bl}.zip
-# Source0-md5:	2184fe9f33ab75dbfc087c81b99ad3fd
+Source0:	http://projects.blender.org/frs/download.php/244/%{name}-%{version}-linux-mac.tgz
+# Source0-md5:	f3c19dcbab4d1e77b4ef34f7916d8235
 URL:		http://spe.pycs.net/
 BuildRequires:	rpm-pythonprov
+BuildRequires:	findutils
 %pyrequires_eq	python-modules
 Requires:	python-wxPython >= %{_wx}
 BuildArch:	noarch
@@ -52,6 +54,8 @@ python setup.py install \
 	--optimize=2 \
 	--root=$RPM_BUILD_ROOT
 
+find $RPM_BUILD_ROOT -name '*.py' -exec rm "{}" ";"
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -59,4 +63,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README.txt
 %attr(755,root,root) %{_bindir}/*
-%{py_sitedir}/*
+%{py_sitescriptdir}/*
