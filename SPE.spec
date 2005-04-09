@@ -1,21 +1,24 @@
 # TODO:
 # - fix %%files (doc to %%doc, no .py, remove unused files)
 
-%define	_wx	2.5.2.8
+%define	_wx	2.5.4.1
 %define	_bl	2.35
 
 Summary:	SPE - Stani's Python Editor
 Summary(pl):	SPE - pythonowy edytor Staniego
 Name:		SPE
-Version:	0.7.2.b
+Version:	0.7.3.a
 Release:	0.1
 License:	LGPL 2.1+ (except sm library <free to use> and sm_idle <PSF>)
 Group:		Applications/Text
-Source0:	http://projects.blender.org/frs/download.php/252/%{name}-%{version}-wx%{_wx}.-bl%{_bl}.zip
-# Source0-md5:	2f72f638b6fb850b0028193a03236948
+Source0:	http://projects.blender.org/frs/download.php/271/%{name}-%{version}-wx%{_wx}.-bl%{_bl}.zip
+# Source0-md5:	52b1d02f179bab7a71b57f5698343230
 URL:		http://spe.pycs.net/
 BuildRequires:	findutils
+BuildRequires:	python
 BuildRequires:	python-devel
+BuildRequires:	python-modules
+BuildRequires:	unzip
 %pyrequires_eq	python-modules
 Requires:	python-wxPython >= %{_wx}
 BuildArch:	noarch
