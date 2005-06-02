@@ -14,7 +14,6 @@ Group:		Applications/Text
 Source0:	http://projects.blender.org/frs/download.php/271/%{name}-%{version}-wx%{_wx}.-bl%{_bl}.zip
 # Source0-md5:	52b1d02f179bab7a71b57f5698343230
 URL:		http://spe.pycs.net/
-BuildRequires:	findutils
 BuildRequires:	python
 BuildRequires:	python-devel
 BuildRequires:	python-modules
