@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=SPE Python IDE
+Comment=SPE Python IDE
+Icon=SPE.png
+Exec=spe
+Terminal=false
+Type=Application
+Categories=Development;IDE;
+Encoding=UTF-8
+# vi: encoding=utf-8
