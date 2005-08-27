@@ -1,23 +1,23 @@
 # TODO:
 # - fix %%files (doc to %%doc, no .py, remove unused files)
-
-%define	_wx	2.5.4.1
+%define	_wx	2.6.1.0
 %define	_bl	2.35
 
 Summary:	SPE - Stani's Python Editor
 Summary(pl):	SPE - pythonowy edytor Staniego
 Name:		SPE
-Version:	0.7.3.a
+Version:	0.7.5.c
 Release:	0.1
 License:	LGPL 2.1+ (except sm library <free to use> and sm_idle <PSF>)
 Group:		Applications/Text
-Source0:	http://projects.blender.org/frs/download.php/271/%{name}-%{version}-wx%{_wx}.-bl%{_bl}.zip
-# Source0-md5:	52b1d02f179bab7a71b57f5698343230
+Source0:	http://download.berlios.de/python/%{name}-%{version}-wx%{_wx}.-bl%{_bl}.tar.gz
+# Source0-md5:	c40a24a3ed79ebba8c4fb208c000f67c
+Source1:	%{name}.desktop
+Source2:	%{name}.png
 URL:		http://spe.pycs.net/
 BuildRequires:	python
 BuildRequires:	python-devel
 BuildRequires:	python-modules
-BuildRequires:	unzip
 %pyrequires_eq	python-modules
 Requires:	python-wxPython >= %{_wx}
 BuildArch:	noarch
@@ -51,12 +51,17 @@ python setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 
 python setup.py install \
 	--optimize=2 \
 	--root=$RPM_BUILD_ROOT
 
-find $RPM_BUILD_ROOT -name '*.py' -exec rm "{}" ";"
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
+install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
+
+# SPE doesn't work without *.py files so don't remove them
+#%%py_postclean
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -66,3 +71,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc README.txt
 %attr(755,root,root) %{_bindir}/*
 %{py_sitescriptdir}/*
+%{_desktopdir}/*
+%{_pixmapsdir}/*
