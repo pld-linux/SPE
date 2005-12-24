@@ -6,12 +6,12 @@
 Summary:	SPE - Stani's Python Editor
 Summary(pl):	SPE - pythonowy edytor Staniego
 Name:		SPE
-Version:	0.7.5.f
-Release:	0.1
+Version:	0.8.1.c
+Release:	1
 License:	LGPL 2.1+ (except sm library <free to use> and sm_idle <PSF>)
 Group:		Applications/Text
 Source0:	http://download.berlios.de/python/%{name}-%{version}-wx%{_wx}.-bl%{_bl}.tar.gz
-# Source0-md5:	dea7de91cc9cc80a95221b5b0748ec28
+# Source0-md5:	b98d68d33cad1f28c0b4e8091f271f8f
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 URL:		http://spe.pycs.net/
