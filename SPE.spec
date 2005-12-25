@@ -7,7 +7,7 @@ Summary:	SPE - Stani's Python Editor
 Summary(pl):	SPE - pythonowy edytor Staniego
 Name:		SPE
 Version:	0.8.1.c
-Release:	1
+Release:	2
 License:	LGPL 2.1+ (except sm library <free to use> and sm_idle <PSF>)
 Group:		Applications/Text
 Source0:	http://download.berlios.de/python/%{name}-%{version}-wx%{_wx}.-bl%{_bl}.tar.gz
@@ -18,8 +18,11 @@ URL:		http://spe.pycs.net/
 BuildRequires:	python
 BuildRequires:	python-devel
 BuildRequires:	python-modules
+Requires:	pydoc
 %pyrequires_eq	python-modules
 Requires:	python-wxPython >= %{_wx}
+# below is needed - SPE doesn't start without "hacked" release of wxPython (reporting version issue)
+Requires:	python-wxPython >= 2.6.1.0-3
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
