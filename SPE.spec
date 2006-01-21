@@ -1,17 +1,16 @@
 # TODO:
 # - fix %%files (doc to %%doc, no .py, remove unused files)
 %define	_wx	2.6.1.0
-%define	_bl	2.35
-
+#
 Summary:	SPE - Stani's Python Editor
 Summary(pl):	SPE - pythonowy edytor Staniego
 Name:		SPE
-Version:	0.8.1.c
-Release:	2
+Version:	0.8.1.d
+Release:	1
 License:	LGPL 2.1+ (except sm library <free to use> and sm_idle <PSF>)
 Group:		Applications/Text
-Source0:	http://download.berlios.de/python/%{name}-%{version}-wx%{_wx}.-bl%{_bl}.tar.gz
-# Source0-md5:	b98d68d33cad1f28c0b4e8091f271f8f
+Source0:	http://download.berlios.de/python/%{name}-%{version}-wx%{_wx}.tar.gz
+# Source0-md5:	ea3f3bdf50d4dd26d21f9fc6fab70523
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 URL:		http://spe.pycs.net/
@@ -47,7 +46,7 @@ mo¿liwo¶ci± automatycznego uruchamiania z poziomu blendera. Spe jest
 rozszerzalne przy pomocy boa.
 
 %prep
-%setup -q -n %{name}-%{version}-wx%{_wx}.-bl%{_bl}
+%setup -q -n %{name}-%{version}-wx%{_wx}
 
 %build
 python setup.py build
