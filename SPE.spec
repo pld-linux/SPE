@@ -73,5 +73,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc README.txt
 %attr(755,root,root) %{_bindir}/*
 %{py_sitescriptdir}/*
-%{_desktopdir}/*
+%{_desktopdir}/*.desktop
 %{_pixmapsdir}/*
