@@ -3,7 +3,7 @@
 %define	_wx	2.6.1.0
 #
 Summary:	SPE - Stani's Python Editor
-Summary(pl):	SPE - pythonowy edytor Staniego
+Summary(pl.UTF-8):   SPE - pythonowy edytor Staniego
 Name:		SPE
 Version:	0.8.2.a
 Release:	2
@@ -33,16 +33,16 @@ browser, recent file browser, drag&drop, context help, ... Special is
 its blender support with a blender 3d object browser and its ability
 to run interactively inside blender. Spe is extensible with boa. 
 
-%description -l pl
+%description -l pl.UTF-8
 Spe (Stani's Python Editor) to pythonowe IDE z automatycznym
-wykonywaniem wciêæ, automatycznym dope³nianiem, podpowiedziami
-wywo³añ, kolorowaniem sk³adni, pod¶wietlaniem sk³adni, eksploratorem
-klas, indeksem ¼róde³, automatyczn± list± TODO, przyklejanymi
-notatkami, zintegrowan± pow³ok± pycrust, przegl±dark± plików
-pythonowych, przegl±dark± ostatnio u¿ywanych plików, obs³ug± w stylu
-przeci±gnij-i-upu¶æ, pomoc± kontekstow±... Specjaln± rzecz± jest
-wsparcie dla blendera z przegl±dark± obiektów blendera 3D i
-mo¿liwo¶ci± automatycznego uruchamiania z poziomu blendera. Spe jest
+wykonywaniem wciÄ™Ä‡, automatycznym dopeÅ‚nianiem, podpowiedziami
+wywoÅ‚aÅ„, kolorowaniem skÅ‚adni, podÅ›wietlaniem skÅ‚adni, eksploratorem
+klas, indeksem ÅºrÃ³deÅ‚, automatycznÄ… listÄ… TODO, przyklejanymi
+notatkami, zintegrowanÄ… powÅ‚okÄ… pycrust, przeglÄ…darkÄ… plikÃ³w
+pythonowych, przeglÄ…darkÄ… ostatnio uÅ¼ywanych plikÃ³w, obsÅ‚ugÄ… w stylu
+przeciÄ…gnij-i-upuÅ›Ä‡, pomocÄ… kontekstowÄ…... SpecjalnÄ… rzeczÄ… jest
+wsparcie dla blendera z przeglÄ…darkÄ… obiektÃ³w blendera 3D i
+moÅ¼liwoÅ›ciÄ… automatycznego uruchamiania z poziomu blendera. Spe jest
 rozszerzalne przy pomocy boa.
 
 %prep
