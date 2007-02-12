@@ -3,7 +3,7 @@
 %define	_wx	2.6.1.0
 #
 Summary:	SPE - Stani's Python Editor
-Summary(pl.UTF-8):   SPE - pythonowy edytor Staniego
+Summary(pl.UTF-8):	SPE - pythonowy edytor Staniego
 Name:		SPE
 Version:	0.8.2.a
 Release:	2
