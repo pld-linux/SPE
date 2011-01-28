@@ -17,6 +17,7 @@ URL:		http://spe.pycs.net/
 BuildRequires:	python
 BuildRequires:	python-devel
 BuildRequires:	python-modules
+BuildRequires:	rpm-pythonprov
 Requires:	pydoc
 %pyrequires_eq	python-modules
 Requires:	python-wxPython >= %{_wx}
