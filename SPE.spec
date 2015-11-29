@@ -14,6 +14,7 @@ Source0:	http://download.berlios.de/python/%{name}-%{version}-wx%{_wx}.tar.gz
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 URL:		http://spe.pycs.net/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	python
 BuildRequires:	python-devel
 BuildRequires:	python-modules
